@@ -13,6 +13,7 @@
 
 <style>
   .navbar {
+    z-index: 3;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -51,5 +52,18 @@
 
   .navbar ul li {
     margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .navbar a {
+      text-align: center;
+    }
+
+    .navbar ul li {
+      margin-left: 10px;
+    }
   }
 </style>

@@ -34,7 +34,10 @@
   @media (max-width: 768px) {
     .header .container {
       flex-direction: column;
-      padding-top: 20px;
+      padding-top: 10px;
+    }
+    .header h1 {
+      text-align: center;
     }
   }
 </style>

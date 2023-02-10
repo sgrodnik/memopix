@@ -14,6 +14,7 @@
 
 <style>
   .contacts .container {
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

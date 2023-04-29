@@ -7,11 +7,12 @@
 
 	export let box;
 
-	const popup = new mapbox.Popup({ offset: 25 })
-		.setText(box.name);
+	const popup = new mapbox.Popup({ offset: 25, closeButton: false })
+    .setHTML(`${box.name}<br>${box.address}<br>${box.time}`);
 
-	const marker = new mapbox.Marker()
-		.setLngLat(box.location)
+  const xy = [box.locationYx[1], box.locationYx[0]]
+  const marker = new mapbox.Marker()
+		.setLngLat(xy)
 		.setPopup(popup)
 		.addTo(map);
 </script>
